@@ -133,6 +133,14 @@
                                             <outlet property="delegate" destination="k1C-Rp-6mv" id="BbK-iY-zZ4"/>
                                         </connections>
                                     </mapView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-TO-gEX">
+                                        <rect key="frame" x="10" y="415" width="580" height="21"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="3Fh-wT-mEF"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUj-Xe-zvC">
                                         <rect key="frame" x="0.0" y="436" width="600" height="100"/>
                                         <subviews>
@@ -141,24 +149,24 @@
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.34509803919999998" green="0.76078431369999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-ma-PQO">
-                                                <rect key="frame" x="10" y="7" width="580" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-ma-PQO">
+                                                <rect key="frame" x="10" y="70" width="580" height="0.0"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6H-zq-vkm">
-                                                <rect key="frame" x="10" y="38" width="580" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6H-zq-vkm">
+                                                <rect key="frame" x="10" y="80" width="580" height="0.0"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-MM-oUe">
-                                                <rect key="frame" x="10" y="69" width="580" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-MM-oUe">
+                                                <rect key="frame" x="10" y="90" width="580" height="0.0"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -189,9 +197,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cUj-Xe-zvC" secondAttribute="trailing" id="4Ze-7A-yQA"/>
+                                    <constraint firstItem="uvX-TO-gEX" firstAttribute="leading" secondItem="y78-NZ-jjz" secondAttribute="leading" constant="10" id="87r-Gg-ozs"/>
                                     <constraint firstItem="cUj-Xe-zvC" firstAttribute="leading" secondItem="y78-NZ-jjz" secondAttribute="leading" id="9Rk-SJ-PWU"/>
+                                    <constraint firstAttribute="trailing" secondItem="uvX-TO-gEX" secondAttribute="trailing" constant="10" id="MNL-cJ-SUp"/>
                                     <constraint firstAttribute="bottom" secondItem="7Bu-Z5-yGI" secondAttribute="bottom" id="Xi4-S7-4jG"/>
                                     <constraint firstAttribute="bottom" secondItem="cUj-Xe-zvC" secondAttribute="bottom" id="a6p-Ea-wP1"/>
+                                    <constraint firstItem="cUj-Xe-zvC" firstAttribute="top" secondItem="uvX-TO-gEX" secondAttribute="bottom" id="afM-Sd-tFr"/>
                                     <constraint firstItem="7Bu-Z5-yGI" firstAttribute="leading" secondItem="y78-NZ-jjz" secondAttribute="leading" id="s78-mw-VbN"/>
                                     <constraint firstAttribute="trailing" secondItem="7Bu-Z5-yGI" secondAttribute="trailing" id="soS-eo-D2R"/>
                                     <constraint firstItem="7Bu-Z5-yGI" firstAttribute="top" secondItem="y78-NZ-jjz" secondAttribute="top" id="tla-Cd-23K"/>
@@ -210,13 +221,14 @@
                     <connections>
                         <outlet property="mapView" destination="7Bu-Z5-yGI" id="2Fi-93-mH2"/>
                         <outlet property="placeNameLabel" destination="iiS-ma-PQO" id="KBF-7Y-Vgf"/>
+                        <outlet property="temperatureBar" destination="uvX-TO-gEX" id="gOp-bf-Wse"/>
                         <outlet property="weatherCloudyLabel" destination="u6H-zq-vkm" id="Lv4-JI-dal"/>
                         <outlet property="weatherTempartureLabel" destination="yBW-MM-oUe" id="KKG-oA-B9t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITz-1o-YXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="110"/>
+            <point key="canvasLocation" x="1613" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aVQ-wO-y7l">

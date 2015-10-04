@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		109EDAB792C0D48880883D448E3979E9 /* Pods-iWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D10206BC743E8CB7DF70072AE22291 /* Pods-iWeather-dummy.m */; };
+		0F4DAB16C8452FC5859547B7A5642CB2 /* Pods-iWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C47BA1AC8006640D30B36186EB1B2291 /* Pods-iWeather-dummy.m */; };
+		10C805F14022E8FA42613A4E9FFBBDFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F757F3A26FD34ADECFAB33F12ED59 /* Foundation.framework */; };
 		27C613CD8F0D5500013A024E4636F20C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */; };
-		2F8C6CAAE593D8F555D0D54C536E3580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421D88E3116BD4238BF4D72BFB3802D8 /* Foundation.framework */; };
+		295AB654C9A7B31C5F41917D4AE363AC /* THProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D18E6F8683D788100BCDD04D1398E798 /* THProgressView.m */; };
+		2F8C6CAAE593D8F555D0D54C536E3580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F757F3A26FD34ADECFAB33F12ED59 /* Foundation.framework */; };
 		317602D7E2B9A957806A009744DBB727 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */; };
-		5D09A24F9117ED16E1AFB0C23FE6EFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421D88E3116BD4238BF4D72BFB3802D8 /* Foundation.framework */; };
+		37730128687A8ED4C5763174ADAC4571 /* THProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF80839FBE13A4F25FFECF3F43CC9D80 /* THProgressView-dummy.m */; };
+		44C02F1779E2698356A2E3DD64301A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7F757F3A26FD34ADECFAB33F12ED59 /* Foundation.framework */; };
+		747758840531728094F6E6EA7F442AF7 /* THProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = E43CA63B0EE5FEAE3E97D885BBEE358D /* THProgressView.h */; };
 		7BE7688304D568BF106470980EB865C7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */; };
 		89F05D147E1D3780837633BB16691C53 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */; };
 		B0D42E3798828F3B0DFEAE2E8C0A9D5F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */; };
@@ -19,47 +23,53 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7A7558370AD310A5B517A1CEAF94B783 /* PBXContainerItemProxy */ = {
+		25F6F7F5892F42951F624A2894AF68BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B281DA29A9C3EDFB45BA53651F6BA611;
 			remoteInfo = SVProgressHUD;
 		};
+		8AC34DA689A6F69F1CFA3AD6902830DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2504C936F3BD7926A212C440AB52FC2;
+			remoteInfo = THProgressView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		10321ADFC5D95CC2135B0EE7EC08F0D4 /* THProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = THProgressView.xcconfig; sourceTree = "<group>"; };
 		13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		27F53A74A4956B6666100C5E2FD7E685 /* SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
-		29545B8AA258592B0A41A4A4908FF4DD /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		3C29BE3E59FC8FCBE4E06A139C172AFA /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		421D88E3116BD4238BF4D72BFB3802D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		401F23EE9B4CA8E8D02599B3E86857B6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		43E3CA0CCABD3748F3C2D22D0B5C845F /* Pods-iWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iWeather.release.xcconfig"; sourceTree = "<group>"; };
 		83B139BF6FC95735C829183876D2633B /* Pods-iWeather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iWeather-resources.sh"; sourceTree = "<group>"; };
-		8C2368D2659CA892E5F776042D0705BA /* Pods-iWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iWeather.release.xcconfig"; sourceTree = "<group>"; };
+		8BD7FBD3F2D3125EE0098F830C5AA3B3 /* THProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THProgressView-prefix.pch"; sourceTree = "<group>"; };
+		9825F5C0772ED477CF97E90F1EEEF493 /* THProgressView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "THProgressView-Private.xcconfig"; sourceTree = "<group>"; };
 		A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		A5593CB431B5CB9A78B802BE7E731A59 /* Pods-iWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1386CCE630D5F661F855748D701D7E /* Pods-iWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C47BA1AC8006640D30B36186EB1B2291 /* Pods-iWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iWeather-dummy.m"; sourceTree = "<group>"; };
+		C6A46922BBB83E67133C6BEF626A8C55 /* Pods-iWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		D40EB6C59D688B5EEBE389B8B90629F8 /* libPods-iWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE1BA88351F84A1C31AFDE5AE5104D0 /* libTHProgressView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTHProgressView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18E6F8683D788100BCDD04D1398E798 /* THProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THProgressView.m; path = THProgressView/THProgressView.m; sourceTree = "<group>"; };
 		D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		DA7F757F3A26FD34ADECFAB33F12ED59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E43CA63B0EE5FEAE3E97D885BBEE358D /* THProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THProgressView.h; path = THProgressView/THProgressView.h; sourceTree = "<group>"; };
+		EAC2441523C30BE4A511319FC2F11000 /* libPods-iWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB58487E52D79BEC7FB721C5F4A9395 /* Pods-iWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iWeather-acknowledgements.plist"; sourceTree = "<group>"; };
-		F9D10206BC743E8CB7DF70072AE22291 /* Pods-iWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iWeather-dummy.m"; sourceTree = "<group>"; };
-		FB28A29FF5874F7F88A10C84D6007EEA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F005B6B2A25EB0B3A2014BFBAE11E120 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		F95A20E113B292EF197C9DBCE7EC3DD7 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		FF80839FBE13A4F25FFECF3F43CC9D80 /* THProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "THProgressView-dummy.m"; sourceTree = "<group>"; };
 		FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F330B0DAE13C85B613C85AC82F4B830 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D09A24F9117ED16E1AFB0C23FE6EFF2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		383B4BF839254A82265A1E6D540C9F3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,13 +79,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CB06B56C1F6C8F33893CB913C23ACC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C805F14022E8FA42613A4E9FFBBDFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DAF74EFA34987D15D84506D92B92D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C02F1779E2698356A2E3DD64301A2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		00FC04B06EEF8A155D545C321FDCC389 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				421D88E3116BD4238BF4D72BFB3802D8 /* Foundation.framework */,
+				DA7F757F3A26FD34ADECFAB33F12ED59 /* Foundation.framework */,
 				248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */,
 			);
 			name = iOS;
@@ -89,25 +115,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6D8EBE4ED0A947EDE73A122C037F0025 /* SVProgressHUD */ = {
+		62F80F790694FC90CD0D796A19EE3932 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10321ADFC5D95CC2135B0EE7EC08F0D4 /* THProgressView.xcconfig */,
+				9825F5C0772ED477CF97E90F1EEEF493 /* THProgressView-Private.xcconfig */,
+				FF80839FBE13A4F25FFECF3F43CC9D80 /* THProgressView-dummy.m */,
+				8BD7FBD3F2D3125EE0098F830C5AA3B3 /* THProgressView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/THProgressView";
+			sourceTree = "<group>";
+		};
+		7839D16F90F39E28F46A6F72F63AF5AB /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
 				CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */,
 				004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */,
 				D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */,
 				A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */,
-				79F6C638D34290E6A5D2358599F396DB /* Resources */,
-				CC93BB5F0CC850BF4538511C14B7D8A8 /* Support Files */,
+				921CD7EF97D5E402F9C7DA67AC3E1C13 /* Resources */,
+				EE44887B0E4B64682A4BD6DF4E8D1380 /* Support Files */,
 			);
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		79F6C638D34290E6A5D2358599F396DB /* Resources */ = {
+		7AF109F40EC13B6791690C3A48108687 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FB28A29FF5874F7F88A10C84D6007EEA /* SVProgressHUD.bundle */,
+				7839D16F90F39E28F46A6F72F63AF5AB /* SVProgressHUD */,
+				7DE082AD81ED7C1DB5512D6E2DE5411D /* THProgressView */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -115,10 +154,28 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */,
+				7AF109F40EC13B6791690C3A48108687 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				B9414E01881212AD9CD142BFAF933742 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7DE082AD81ED7C1DB5512D6E2DE5411D /* THProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				E43CA63B0EE5FEAE3E97D885BBEE358D /* THProgressView.h */,
+				D18E6F8683D788100BCDD04D1398E798 /* THProgressView.m */,
+				62F80F790694FC90CD0D796A19EE3932 /* Support Files */,
+			);
+			path = THProgressView;
+			sourceTree = "<group>";
+		};
+		921CD7EF97D5E402F9C7DA67AC3E1C13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				401F23EE9B4CA8E8D02599B3E86857B6 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B9414E01881212AD9CD142BFAF933742 /* Targets Support Files */ = {
@@ -129,23 +186,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CC93BB5F0CC850BF4538511C14B7D8A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				29545B8AA258592B0A41A4A4908FF4DD /* SVProgressHUD.xcconfig */,
-				27F53A74A4956B6666100C5E2FD7E685 /* SVProgressHUD-Private.xcconfig */,
-				FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */,
-				3C29BE3E59FC8FCBE4E06A139C172AFA /* SVProgressHUD-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D40EB6C59D688B5EEBE389B8B90629F8 /* libPods-iWeather.a */,
+				EAC2441523C30BE4A511319FC2F11000 /* libPods-iWeather.a */,
 				13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */,
+				CCE1BA88351F84A1C31AFDE5AE5104D0 /* libTHProgressView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,26 +201,38 @@
 			children = (
 				AA1386CCE630D5F661F855748D701D7E /* Pods-iWeather-acknowledgements.markdown */,
 				ECB58487E52D79BEC7FB721C5F4A9395 /* Pods-iWeather-acknowledgements.plist */,
-				F9D10206BC743E8CB7DF70072AE22291 /* Pods-iWeather-dummy.m */,
+				C47BA1AC8006640D30B36186EB1B2291 /* Pods-iWeather-dummy.m */,
 				83B139BF6FC95735C829183876D2633B /* Pods-iWeather-resources.sh */,
-				A5593CB431B5CB9A78B802BE7E731A59 /* Pods-iWeather.debug.xcconfig */,
-				8C2368D2659CA892E5F776042D0705BA /* Pods-iWeather.release.xcconfig */,
+				C6A46922BBB83E67133C6BEF626A8C55 /* Pods-iWeather.debug.xcconfig */,
+				43E3CA0CCABD3748F3C2D22D0B5C845F /* Pods-iWeather.release.xcconfig */,
 			);
 			name = "Pods-iWeather";
 			path = "Target Support Files/Pods-iWeather";
 			sourceTree = "<group>";
 		};
-		E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */ = {
+		EE44887B0E4B64682A4BD6DF4E8D1380 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D8EBE4ED0A947EDE73A122C037F0025 /* SVProgressHUD */,
+				F005B6B2A25EB0B3A2014BFBAE11E120 /* SVProgressHUD.xcconfig */,
+				27F53A74A4956B6666100C5E2FD7E685 /* SVProgressHUD-Private.xcconfig */,
+				FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */,
+				F95A20E113B292EF197C9DBCE7EC3DD7 /* SVProgressHUD-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8DFD2E780ADC91C52A46BA7AB51C8CA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747758840531728094F6E6EA7F442AF7 /* THProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6E03BC82D209DE558C3932FF43FC1F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,21 +245,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C8A3E4202F035ED633352D898CD3802 /* Pods-iWeather */ = {
+		7D98572004393F4E21F6358F0CF1734B /* Pods-iWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD4BACE2493910FAB19034FE7C666678 /* Build configuration list for PBXNativeTarget "Pods-iWeather" */;
+			buildConfigurationList = D96CD4544BB835C85DDA4AEB0D3A2CA2 /* Build configuration list for PBXNativeTarget "Pods-iWeather" */;
 			buildPhases = (
-				14E82CFFA04D9497D67427E88B3A9D6A /* Sources */,
-				1F330B0DAE13C85B613C85AC82F4B830 /* Frameworks */,
+				B135917BAB1D5C85FCA392083E3691E0 /* Sources */,
+				9DAF74EFA34987D15D84506D92B92D0D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C55317F3C3C3393836C387C9785919CB /* PBXTargetDependency */,
+				B1FE912B4F51D83EFDA57DC6F26B2B2D /* PBXTargetDependency */,
+				D82DA240EF74D70691EDBD6153876A6E /* PBXTargetDependency */,
 			);
 			name = "Pods-iWeather";
 			productName = "Pods-iWeather";
-			productReference = D40EB6C59D688B5EEBE389B8B90629F8 /* libPods-iWeather.a */;
+			productReference = EAC2441523C30BE4A511319FC2F11000 /* libPods-iWeather.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */ = {
@@ -219,6 +278,23 @@
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
 			productReference = 13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2504C936F3BD7926A212C440AB52FC2 /* THProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B42F0EC418E64267A7B56AE75EF9AB /* Build configuration list for PBXNativeTarget "THProgressView" */;
+			buildPhases = (
+				58987DC64220C477C6A9461D65473854 /* Sources */,
+				3CB06B56C1F6C8F33893CB913C23ACC0 /* Frameworks */,
+				8DFD2E780ADC91C52A46BA7AB51C8CA9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THProgressView;
+			productName = THProgressView;
+			productReference = CCE1BA88351F84A1C31AFDE5AE5104D0 /* libTHProgressView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -242,21 +318,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C8A3E4202F035ED633352D898CD3802 /* Pods-iWeather */,
+				7D98572004393F4E21F6358F0CF1734B /* Pods-iWeather */,
 				B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */,
+				F2504C936F3BD7926A212C440AB52FC2 /* THProgressView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14E82CFFA04D9497D67427E88B3A9D6A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				109EDAB792C0D48880883D448E3979E9 /* Pods-iWeather-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D0E2D1B45261FB1DAC837B020C4EC01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,14 +336,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58987DC64220C477C6A9461D65473854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37730128687A8ED4C5763174ADAC4571 /* THProgressView-dummy.m in Sources */,
+				295AB654C9A7B31C5F41917D4AE363AC /* THProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B135917BAB1D5C85FCA392083E3691E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4DAB16C8452FC5859547B7A5642CB2 /* Pods-iWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C55317F3C3C3393836C387C9785919CB /* PBXTargetDependency */ = {
+		B1FE912B4F51D83EFDA57DC6F26B2B2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */;
-			targetProxy = 7A7558370AD310A5B517A1CEAF94B783 /* PBXContainerItemProxy */;
+			targetProxy = 25F6F7F5892F42951F624A2894AF68BE /* PBXContainerItemProxy */;
+		};
+		D82DA240EF74D70691EDBD6153876A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = THProgressView;
+			target = F2504C936F3BD7926A212C440AB52FC2 /* THProgressView */;
+			targetProxy = 8AC34DA689A6F69F1CFA3AD6902830DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -289,22 +381,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3BF444078A56800A608DA4B3C59FE00D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5593CB431B5CB9A78B802BE7E731A59 /* Pods-iWeather.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -350,6 +426,22 @@
 			};
 			name = Debug;
 		};
+		6207CB93FC7E178D69C63185A0CBF7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9825F5C0772ED477CF97E90F1EEEF493 /* THProgressView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/THProgressView/THProgressView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,9 +476,25 @@
 			};
 			name = Release;
 		};
-		81F9035BB6BE2BE7DAA7F7712FABF332 /* Release */ = {
+		7BC5BE7B1B1A0B45BA17A4E6BD98AF66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C2368D2659CA892E5F776042D0705BA /* Pods-iWeather.release.xcconfig */;
+			baseConfigurationReference = 9825F5C0772ED477CF97E90F1EEEF493 /* THProgressView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/THProgressView/THProgressView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8B87E71646707530BD59629FE242D5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E3CA0CCABD3748F3C2D22D0B5C845F /* Pods-iWeather.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -416,6 +524,22 @@
 			};
 			name = Release;
 		};
+		EADA0FF5A31AC4D7D5EE40E88D946A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A46922BBB83E67133C6BEF626A8C55 /* Pods-iWeather.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +548,15 @@
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B42F0EC418E64267A7B56AE75EF9AB /* Build configuration list for PBXNativeTarget "THProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC5BE7B1B1A0B45BA17A4E6BD98AF66 /* Debug */,
+				6207CB93FC7E178D69C63185A0CBF7AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -437,11 +570,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD4BACE2493910FAB19034FE7C666678 /* Build configuration list for PBXNativeTarget "Pods-iWeather" */ = {
+		D96CD4544BB835C85DDA4AEB0D3A2CA2 /* Build configuration list for PBXNativeTarget "Pods-iWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BF444078A56800A608DA4B3C59FE00D /* Debug */,
-				81F9035BB6BE2BE7DAA7F7712FABF332 /* Release */,
+				EADA0FF5A31AC4D7D5EE40E88D946A6F /* Debug */,
+				8B87E71646707530BD59629FE242D5DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

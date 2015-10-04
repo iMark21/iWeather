@@ -4,5 +4,7 @@
 target 'iWeather' do
 
 pod 'SVProgressHUD'
+pod 'THProgressView'
+
 end
 

@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) NSMutableArray *parsedItems;
 
+@property (nonatomic, strong) NSArray *cachedItems;
+
 -(void)loadDataWithUrl:(NSString*)url;
 
 @end
@@ -61,26 +63,56 @@
         
         if (!error) {
             
-            for (id item in [JSONArray valueForKey:@"geonames"]) {
+            if ([[JSONArray valueForKey:@"geonames"] count]==0 || JSONArray == nil) {
                 
-                if ([item isKindOfClass:[NSDictionary class]]) {
-                    
-                    dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertController * alert=   [UIAlertController
+                                              alertControllerWithTitle:@"Ooops!"                                                  message:NSLocalizedString(@"Something goes wrong. Please search another place", @"")
+                                              preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction *cancelButton = [UIAlertAction
+                                               actionWithTitle:@"Ok"
+                                               style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action)
+                                               {
+                                                   [alert dismissViewControllerAnimated:YES completion:nil];
+                                                   
+                                               }];
+                
+                [alert addAction:cancelButton];
+                
+                [self presentViewController:alert animated:YES completion:nil];
 
-                        MMGeographicPlace *place = [[MMGeographicPlace alloc] initWithDictionary:item];
-                        
-                        [self.parsedItems addObject:place];
-                        
-                        [self.tableView reloadData];
-                        
-                        [SVProgressHUD dismiss];
-                        
-                        NSLog(@"%@",place.name);
-                    });
+            
+            
+            }else{
+                
+                for (id item in [JSONArray valueForKey:@"geonames"]) {
                     
+                    if ([item isKindOfClass:[NSDictionary class]]) {
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            
+                            MMGeographicPlace *place = [[MMGeographicPlace alloc] initWithDictionary:item];
+                            
+                            [self.parsedItems addObject:place];
+                            
+                            [self.tableView reloadData];
+                            
+                           
+                        });
+                        
+                    }
                 }
+
             }
+            
+            
         }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [SVProgressHUD dismiss];
+            
+        });
 
     }];
 }
@@ -88,27 +120,45 @@
 
 - (IBAction)searchButtonAction:(id)sender {
 
+    if ([self.textField.text length]==0) {
+        
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@"Ooops!"                                                  message:NSLocalizedString(@"You have to enter a place", @"")
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancelButton = [UIAlertAction
+                                       actionWithTitle:@"Ok"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action)
+                                       {
+                                           [alert dismissViewControllerAnimated:YES completion:nil];
+                                           
+                                       }];
+        
+        [alert addAction:cancelButton];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
     
     [self loadDataWithUrl:self.textField.text];
     
- 
-    
-    
     
 }
+
+
 
 #pragma mark UITableView methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
 
-    if (self.parsedItems.count >0) {
+    if (self.parsedItems.count == 0 || self.parsedItems == nil) {
     
-        self.tableView.hidden = NO;
-    
-    }else{
-    
-        self.tableView.hidden = YES;
+        self.parsedItems = [NSMutableArray array];
+        
+        self.parsedItems = [[[MMAPI sharedInstance]restoreCacheInformation]mutableCopy];
+
         
     }
 
@@ -126,9 +176,11 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
+
     
-    MMGeographicPlace *place = [self.parsedItems objectAtIndex:indexPath.row];
-    cell.textLabel.text =  place.name;
+        MMGeographicPlace *place = [self.parsedItems objectAtIndex:indexPath.row];
+        cell.textLabel.text =  place.name;
+        
    
     return cell;
 }
@@ -152,6 +204,8 @@
         MMDetailViewController *vc = [segue destinationViewController];
        
         vc.place = place;
+        
+        [[MMAPI sharedInstance]saveCacheInformationWithString:place];
         
     }
 }

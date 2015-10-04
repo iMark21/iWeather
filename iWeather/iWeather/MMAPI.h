@@ -17,4 +17,8 @@
 
 - (void)queryWeatherWithGeographicPlace:(MMGeographicPlace *) place completionBlock:(void (^)(NSArray *JSONArray, NSError *error)) block ;
 
+-(void)saveCacheInformationWithString: (MMGeographicPlace*)place;
+
+-(NSArray*)restoreCacheInformation;
+
 @end

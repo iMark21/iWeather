@@ -20,5 +20,6 @@
 ;
 @property (weak, nonatomic) IBOutlet UILabel *weatherCloudyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *weatherTempartureLabel;
+@property (weak, nonatomic) IBOutlet UIView *temperatureBar;
 
 @end

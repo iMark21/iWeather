@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MMGeographicPlace : NSObject
+@interface MMGeographicPlace : NSObject<NSCoding>
 
 @property (nonatomic,strong) NSString *south;
 @property (nonatomic,strong) NSString *east;
