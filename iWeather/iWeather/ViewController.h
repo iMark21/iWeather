@@ -10,6 +10,15 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
+- (IBAction)searchButtonAction:(id)sender;
+
+
 
 @end
 

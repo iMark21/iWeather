@@ -18,6 +18,7 @@
 		A1895F1E1BC183FD0013B18F /* iWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1895F1D1BC183FD0013B18F /* iWeatherTests.m */; };
 		A1895F291BC183FD0013B18F /* iWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1895F281BC183FD0013B18F /* iWeatherUITests.m */; };
 		A1895F381BC184980013B18F /* MMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A1895F371BC184980013B18F /* MMAPI.m */; settings = {ASSET_TAGS = (); }; };
+		A18D3AA71BC19677004C2E47 /* MMGeographicPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		A1895F2A1BC183FD0013B18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1895F361BC184980013B18F /* MMAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAPI.h; sourceTree = "<group>"; };
 		A1895F371BC184980013B18F /* MMAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAPI.m; sourceTree = "<group>"; };
+		A18D3AA51BC19677004C2E47 /* MMGeographicPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGeographicPlace.h; sourceTree = "<group>"; };
+		A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGeographicPlace.m; sourceTree = "<group>"; };
 		B7C202AFA567F6722A752473 /* Pods-iWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWeather/Pods-iWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		E1E377B8531586CECBB985ED /* libPods-iWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +145,8 @@
 				A1895F001BC183FC0013B18F /* Supporting Files */,
 				A1895F361BC184980013B18F /* MMAPI.h */,
 				A1895F371BC184980013B18F /* MMAPI.m */,
+				A18D3AA51BC19677004C2E47 /* MMGeographicPlace.h */,
+				A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */,
 			);
 			path = iWeather;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				A1895F081BC183FC0013B18F /* ViewController.m in Sources */,
 				A1895F051BC183FC0013B18F /* AppDelegate.m in Sources */,
 				A1895F0E1BC183FD0013B18F /* iWeather.xcdatamodeld in Sources */,
+				A18D3AA71BC19677004C2E47 /* MMGeographicPlace.m in Sources */,
 				A1895F021BC183FC0013B18F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
