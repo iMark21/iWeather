@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MMGeographicPlace.h"
 
 @interface MMAPI : NSObject
 
 +(instancetype)sharedInstance;
 
-- (void)JSONArray:(NSURL *) url completionBlock:(void (^)(NSArray *JSONArray, NSError *error)) block ;
+- (void)queryPlacesWithString:(NSString *) placeString completionBlock:(void (^)(NSArray *JSONArray, NSError *error)) block ;
+
+- (void)queryWeatherWithGeographicPlace:(MMGeographicPlace *) place completionBlock:(void (^)(NSArray *JSONArray, NSError *error)) block ;
 
 @end

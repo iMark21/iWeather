@@ -10,12 +10,8 @@
 #import "SVProgressHUD.h"
 #import "MMAPI.h"
 #import "MMGeographicPlace.h"
+#import "MMDetailViewController.h"
 
-//#define URL @"http://api.geonames.org/searchJSON?q=Madrid&maxRows=5&startRow=0&lang=en&isNameRequired=true&style=FULL&username=demo"
-//
-////http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo
-//
-//#define url2 @"http://api.geonames.org/searchJSON?q=Madrid&maxRows=20&startRow=0&lang=en&isNameRequired=true&style=FULL&username=demo"
 
 @interface ViewController ()
 
@@ -54,22 +50,23 @@
     
 }
 
--(void)loadDataWithUrl:(NSString*)url{
+-(void)loadDataWithUrl:(NSString*)placeString{
     
     [SVProgressHUD showWithStatus:@"Cargando" maskType:SVProgressHUDMaskTypeGradient];
     
     self.parsedItems = [NSMutableArray array];
     
-    [[MMAPI sharedInstance]JSONArray:[NSURL URLWithString:url] completionBlock:^(NSArray *JSONArray, NSError *error) {
+    [[MMAPI sharedInstance] queryPlacesWithString:placeString completionBlock:^(NSArray *JSONArray, NSError *error) {
+       
         
         if (!error) {
             
             for (id item in [JSONArray valueForKey:@"geonames"]) {
                 
                 if ([item isKindOfClass:[NSDictionary class]]) {
-             
+                    
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        // code here
+
                         MMGeographicPlace *place = [[MMGeographicPlace alloc] initWithDictionary:item];
                         
                         [self.parsedItems addObject:place];
@@ -80,27 +77,19 @@
                         
                         NSLog(@"%@",place.name);
                     });
-                   
+                    
                 }
             }
-            
-            
         }
-        
-        
+
     }];
-    
 }
 
 
-
 - (IBAction)searchButtonAction:(id)sender {
+
     
-    //http://api.geonames.org/searchJSON?q=Madrid&maxRows=5&startRow=0&lang=en&isNameRequired=true&style=FULL&username=demo
-    
-    NSString *urlToSearch = [NSString stringWithFormat:@"http://api.geonames.org/searchJSON?q=%@&maxRows=20&startRow=0&lang=en&isNameRequired=true&style=FULL&username=ilgeonamessample",self.textField.text];
-    
-    [self loadDataWithUrl:urlToSearch];
+    [self loadDataWithUrl:self.textField.text];
     
  
     
@@ -111,6 +100,18 @@
 #pragma mark UITableView methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+
+    if (self.parsedItems.count >0) {
+    
+        self.tableView.hidden = NO;
+    
+    }else{
+    
+        self.tableView.hidden = YES;
+        
+    }
+
     
     return [self.parsedItems count];
 }
@@ -130,6 +131,29 @@
     cell.textLabel.text =  place.name;
    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self performSegueWithIdentifier:@"detail" sender:self];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+
+    if ([[segue identifier] isEqualToString:@"detail"])
+    {
+       
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
+        MMGeographicPlace *place = [self.parsedItems objectAtIndex:path.row];
+       
+        MMDetailViewController *vc = [segue destinationViewController];
+       
+        vc.place = place;
+        
+    }
 }
 
 

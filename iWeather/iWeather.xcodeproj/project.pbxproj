@@ -19,6 +19,8 @@
 		A1895F291BC183FD0013B18F /* iWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1895F281BC183FD0013B18F /* iWeatherUITests.m */; };
 		A1895F381BC184980013B18F /* MMAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A1895F371BC184980013B18F /* MMAPI.m */; settings = {ASSET_TAGS = (); }; };
 		A18D3AA71BC19677004C2E47 /* MMGeographicPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */; settings = {ASSET_TAGS = (); }; };
+		A18D3AAA1BC1B115004C2E47 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18D3AA91BC1B115004C2E47 /* MMDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A18D3AAC1BC1B343004C2E47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18D3AAB1BC1B343004C2E47 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		A1895F371BC184980013B18F /* MMAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAPI.m; sourceTree = "<group>"; };
 		A18D3AA51BC19677004C2E47 /* MMGeographicPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGeographicPlace.h; sourceTree = "<group>"; };
 		A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGeographicPlace.m; sourceTree = "<group>"; };
+		A18D3AA81BC1B115004C2E47 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
+		A18D3AA91BC1B115004C2E47 /* MMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDetailViewController.m; sourceTree = "<group>"; };
+		A18D3AAB1BC1B343004C2E47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B7C202AFA567F6722A752473 /* Pods-iWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWeather/Pods-iWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		E1E377B8531586CECBB985ED /* libPods-iWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18D3AAC1BC1B343004C2E47 /* MapKit.framework in Frameworks */,
 				0AD1F1D62239BEAC670CD7EA /* libPods-iWeather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +109,7 @@
 		7BA3F69348F4ECB54AD1B634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A18D3AAB1BC1B343004C2E47 /* MapKit.framework */,
 				E1E377B8531586CECBB985ED /* libPods-iWeather.a */,
 			);
 			name = Frameworks;
@@ -147,6 +154,8 @@
 				A1895F371BC184980013B18F /* MMAPI.m */,
 				A18D3AA51BC19677004C2E47 /* MMGeographicPlace.h */,
 				A18D3AA61BC19677004C2E47 /* MMGeographicPlace.m */,
+				A18D3AA81BC1B115004C2E47 /* MMDetailViewController.h */,
+				A18D3AA91BC1B115004C2E47 /* MMDetailViewController.m */,
 			);
 			path = iWeather;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1895F381BC184980013B18F /* MMAPI.m in Sources */,
+				A18D3AAA1BC1B115004C2E47 /* MMDetailViewController.m in Sources */,
 				A1895F081BC183FC0013B18F /* ViewController.m in Sources */,
 				A1895F051BC183FC0013B18F /* AppDelegate.m in Sources */,
 				A1895F0E1BC183FD0013B18F /* iWeather.xcdatamodeld in Sources */,
