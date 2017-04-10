@@ -1,10 +1,11 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, ‘7.0’
+platform :ios, '9.0'
 
-target 'iWeather' do
-
-pod 'SVProgressHUD'
-pod 'THProgressView'
-
+target 'WeatherApp' do
+	pod 'AFNetworking'
+    pod 'JSONModel'
+    pod 'Realm'
+    pod 'Reachability'
+    pod 'SVProgressHUD'
+    pod 'THProgressView'
+    pod 'NoNetworkViewController'
 end
-
