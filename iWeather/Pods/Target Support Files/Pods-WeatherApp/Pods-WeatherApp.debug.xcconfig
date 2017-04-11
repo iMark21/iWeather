@@ -1,9 +1,0 @@
-ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/JSONModel" "${PODS_ROOT}/Headers/Public/NoNetworkViewController" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/THProgressView"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/JSONModel" "$PODS_CONFIGURATION_BUILD_DIR/NoNetworkViewController" "$PODS_CONFIGURATION_BUILD_DIR/Reachability" "$PODS_CONFIGURATION_BUILD_DIR/Realm" "$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/THProgressView" $(inherited) "${PODS_ROOT}/Realm/core"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/JSONModel" -isystem "${PODS_ROOT}/Headers/Public/NoNetworkViewController" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/Realm" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/THProgressView"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"JSONModel" -l"NoNetworkViewController" -l"Reachability" -l"Realm" -l"SVProgressHUD" -l"THProgressView" -l"c++" -l"realm-ios" -l"z" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_ROOT = ${SRCROOT}/Pods
