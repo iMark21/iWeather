@@ -1,5 +1,5 @@
 # iWeather
-iOS - Weather App
+- iOS - Weather App
 
 # Language
 - Objective-C
@@ -13,4 +13,5 @@ iOS - Weather App
 - AFNetworking for connect to the API.
 - Realm as local storage.
 - VIPER as Architecture.
-- CococaPods as dependency manager. 
+- CococaPods as dependency manager.
+- Remember to run pod install 
